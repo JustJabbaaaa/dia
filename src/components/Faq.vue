@@ -13,7 +13,7 @@
     <Section anchor="FAQ" title="FAQ">
         <div class="faq__content">
             <div class="faq__content--accordion" :class="{ bg: accordionIndex === 1 }">
-                <div class="faq__content--question" @click="toggleAccordion(1)">Lorem ipsum dolor sit amet consectetur?
+                <div class="faq__content--question" @click="toggleAccordion(1)">Lorem ipsum dolor sit amet consectetures?
                     <span class="accordion-icon" :class="{ expanded: accordionIndex === 1 }">
                         <svg fill="#000000" height="1.5rem" width="1.5rem" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 330 330" xml:space="preserve"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path id="XMLID_225_" d="M325.607,79.393c-5.857-5.857-15.355-5.858-21.213,0.001l-139.39,139.393L25.607,79.393 c-5.857-5.857-15.355-5.858-21.213,0.001c-5.858,5.858-5.858,15.355,0,21.213l150.004,150c2.813,2.813,6.628,4.393,10.606,4.393 s7.794-1.581,10.606-4.394l149.996-150C331.465,94.749,331.465,85.251,325.607,79.393z"></path> </g></svg>
                     </span>
