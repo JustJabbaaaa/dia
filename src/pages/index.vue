@@ -33,10 +33,6 @@
   <div class="app home">
     <Navbar />
     <Header />
-    <select v-model="$colorMode.preference">
-      <option value="light">Light</option>
-      <option value="dark">Dark</option>
-    </select>
     <!-- <Section anchor="About" title="About us" subtitle="The power of Vue Components" grid="2">
       <div class="about__content">
         <h3>{{ about.title }}</h3>
