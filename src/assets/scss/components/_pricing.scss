@@ -1,0 +1,80 @@
+@use '../abstracts/variables' as *;
+
+#Pricing{
+    position: relative;
+    scroll-margin-top: 40px;
+    // background: rgba($secondary-light, .1);
+    & .container {
+      position: relative;
+      align-items: center;
+      z-index: 2;
+    }
+    .section__body {
+      position: relative;
+      align-items: center;
+      gap: 1.5rem;
+      z-index: 2;
+    }
+    .pricing__card{
+        display:flex;
+        flex-direction: column;
+        padding: 2rem 1.5rem;
+        align-self: stretch;
+        border-radius:2rem;
+        box-shadow: 0 0 30px -3px rgba($primary-color, .4);
+        // &--head{
+        //     border:1px solid $primary-color;
+        //     border-radius:1rem;
+        //     padding:1rem;
+        // }
+        &--title{
+            font-size:2rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            color:$primary-color;
+        }
+        &--subtitle{
+            font-size:1rem;
+            color:$primary-dark;
+        }
+        hr{
+            border:1px solid rgba($primary-dark, 0.171);
+        }
+        &--cost{
+            display:flex;
+            align-items: center;
+            span{
+                margin-right:.4rem;
+                font-size:2.5rem;
+                color: $primary-color;
+                font-weight:600;
+            }
+        }
+        &--benefits{
+            margin-bottom: 1.5rem;
+            h3{
+                font-size:1.2rem;
+                font-weight:500;
+                text-transform: uppercase;
+                letter-spacing: 3px;
+            }
+        }
+        button{
+            margin-top:auto;
+            border:1px solid $primary-dark;
+            // padding:1rem 2rem;
+            // border-radius:2rem;
+            // box-shadow: 0 0 30px -3px rgba($primary-color, .4);
+            // text-align: center;
+            // background-color: $primary-dark;
+            // color:white;
+            // text-transform: uppercase;
+            // font-size:1.25rem;
+            // font-weight:600;
+            // transition: .3s all ease;
+            // &:hover{
+            //     background-color: $primary-color;
+            // }
+        }
+    }
+}

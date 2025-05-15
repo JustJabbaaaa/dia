@@ -1,0 +1,52 @@
+@use '../abstracts/variables' as *;
+#faq{
+    position: relative;
+    scroll-margin-top: 40px;
+    margin: 0 auto;
+    .section__body {
+        position: relative;
+        align-items: center;
+        gap: 1.5rem;
+        z-index: 2;
+      }
+}
+.faq__content{
+        max-width:600px;
+        display:flex;
+        flex-direction: column;
+        margin:auto;
+        gap: 1rem;
+        &--text{
+            margin-top:1rem;
+        }
+        &--accordion{
+            padding:10px;
+            border:1px solid $primary-color;
+        }
+        &--question{
+            cursor:pointer;
+            font-size:1.5rem;
+            font-weight:500;
+            display:flex;
+            justify-content: space-between;
+            align-items: center;
+            .accordion-icon{
+                float:right;
+                color: $primary-color;
+                transition: ease-in 0.2s;
+                &.expanded{
+                    transform: rotate(180deg);
+                    transition: ease-out 0.2s;
+                }
+            }
+        }
+        &--answer{
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.2s ease-out;
+            &.expanded {
+                max-height: 2000px;
+                transition: max-height 0.5s ease-in;
+            }
+        }
+    }

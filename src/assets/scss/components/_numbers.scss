@@ -1,0 +1,33 @@
+@use '../abstracts/variables' as *;
+#Numbers {
+    position: relative;
+    scroll-margin-top: 40px;
+    margin: 0 auto;
+    .section__body {
+        position: relative;
+        align-items: center;
+        gap: 1.5rem;
+        z-index: 2;
+      }
+}
+.numbers__card{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    align-self:stretch;
+    transition: .3s all ease;
+    &--image{
+        height:80px;
+        width:80px;
+        margin-right:1rem;
+    }
+    &--number{
+        color:$primary-color;
+        font-size:2.5rem;
+        font-weight: 600;
+    }
+    .left{
+        width:120px;
+    }
+}

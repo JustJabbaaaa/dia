@@ -1,0 +1,42 @@
+@use '../abstracts/variables' as *;
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1.5rem 1.25rem;
+  background: $white-color;
+  background: linear-gradient(180deg,rgba($white-color, 1),rgba($primary-color, .5) 50%, rgba($primary-dark, .7) 100%);
+  backdrop-filter: blur(5px);
+
+  overflow: hidden;
+  &__body {
+    width:100%;
+    text-align: center;
+    font-weight: 500;
+    font-size: 1.15rem;
+    line-height: 1;
+    &--content{
+      display:flex;
+      align-items: center;
+      justify-content:center;
+    }
+    &--links{
+      display:flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap:1rem;
+      font-size:1.25rem;
+      p{
+        color:$primary-dark;
+      }
+    }
+    &--image{
+      img{
+        width:200px;
+        height:200px;
+      }
+    }
+  }
+}

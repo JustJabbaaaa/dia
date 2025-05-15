@@ -1,0 +1,56 @@
+@use '../abstracts/variables' as *;
+#Contact{
+    form{
+        display:flex;
+        flex-direction: column;
+        gap: 1rem;
+        .contact__form{
+            display:grid;
+            grid-template-columns: 1fr;
+            gap:1rem;
+            @media screen and (min-width: 992px) {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            &--info{
+                display:flex;
+                flex-direction: column;
+                gap:1rem;
+            }
+            &--group{
+                display:flex;
+                flex-direction:column;
+                label{
+                    text-align: center;
+                    color:$primary-color;
+                    text-transform: uppercase;
+                    font-size:1.3rem;
+                    font-weight:500;
+                }
+                textarea{
+                    height:100%;
+                    min-height:inherit;
+                    resize:none;
+                    font-family:inherit;
+                    font-weight:500;
+                    font-size:1rem;
+                    line-height:normal;
+                }
+                input,
+                textarea{
+                    border: 1px solid $primary-dark;
+                    box-shadow: 0 0 30px -3px rgba($primary-color, .1);
+                    border-radius: .5rem;
+                    padding:.75rem 0.5rem;
+                    transition:box-shadow ease .3s;
+                    &:focus{
+                        outline:none;
+                        box-shadow: 0 0 30px -3px rgba($primary-color, .4);
+                    }
+                }
+            }
+        }
+        button{
+            border:none;
+        }
+    }
+}
