@@ -31,6 +31,7 @@
             justify-content: space-between;
             align-items: center;
             .accordion-icon{
+                fill: $black-color;
                 float:right;
                 color: $primary-color;
                 transition: ease-in 0.2s;

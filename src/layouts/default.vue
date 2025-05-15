@@ -29,12 +29,12 @@
     twitterTitle: pageTitle,
     twitterDescription: pageDescription,
   })
-  defineOgImageComponent('NuxtSeo', {
-    title: pageUrl + '👋',
-    description: pageDescription,
-    theme: '#e13428',
-    colorMode: 'dark',
-  })
+  // defineOgImageComponent('NuxtSeo', {
+  //   title: pageUrl + '👋',
+  //   description: pageDescription,
+  //   theme: '#e13428',
+  //   colorMode: 'dark',
+  // })
 </script>
 
 <template>

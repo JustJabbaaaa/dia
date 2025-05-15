@@ -31,6 +31,13 @@
                 }
             }
         }
+        .faq__content{
+            &--question{
+                .accordion-icon{
+                    fill: $white-color;
+                }
+            }
+        }
         .footer{
             background: rgba($black-color, 0.3);
             background: linear-gradient(180deg,rgba(#091a28, .3),rgba($primary-color, .5) 50%, rgba($primary-dark, .7) 100%);
