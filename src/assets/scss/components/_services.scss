@@ -1,9 +1,7 @@
 @use '../abstracts/variables' as *;
-
 #Services {
   position: relative;
   scroll-margin-top: 40px;
-  background: rgba($secondary-light, .1);
   & .container {
     position: relative;
     align-items: center;

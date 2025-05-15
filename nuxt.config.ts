@@ -12,10 +12,11 @@ export default defineNuxtConfig({
     'assets/scss/style.scss',
   ],
 
-  modules: [ 
+  modules: [
     '@nuxtjs/seo',
     '@nuxt/image',
-    'nuxt-delay-hydration'
+    'nuxt-delay-hydration',
+    '@nuxtjs/color-mode'
   ],
 
   site: {

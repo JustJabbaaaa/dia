@@ -56,6 +56,10 @@ onUnmounted(() => {
           </div>
           <div class="nav__menu--right">
             <NuxtLink to="" class="nav__link btn btn-primary" target="_blank">Login</NuxtLink>
+            <select v-model="$colorMode.preference">
+              <option value="light">Light</option>
+              <option value="dark">Dark</option>
+            </select>
           </div>
         </div>
       </div>

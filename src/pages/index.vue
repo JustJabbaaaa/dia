@@ -3,7 +3,8 @@
   useHead({
     title: pageTitle,
   });
-
+  const colorMode = useColorMode()
+  console.log(colorMode.preference)
   const about = computed(() => ({
     title: 'Lorem, ipsum.',
     description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam quam nobis eveniet vero! Ea, facere, natus sint velit odit iusto amet quibusdam deleniti possimus, vitae esse exercitationem eius earum temporibus?',
@@ -26,20 +27,16 @@
       description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam quam nobis eveniet vero! Ea, facere, natus sint velit odit iusto amet quibusdam deleniti possimus, vitae esse exercitationem eius earum temporibus?',
     },
   ])
-  const contact = computed(() => ({
-    title: 'Get in touch with us to create lightning-fast websites.',
-    description: 'Our team specializes in creating lightning-fast websites that deliver exceptional user experiences. We are dedicated to building web solutions optimized for speed and reliability. Contact us today to discuss how we can help you achieve your website performance goals.',
-    mail: 'contact@kdproject.pl',
-    phone: '+48 123 123 123',
-    btnMail: 'Send Mail',
-    btnCall: 'Call us',
-  }))
 </script>
 
 <template>
   <div class="app home">
     <Navbar />
     <Header />
+    <select v-model="$colorMode.preference">
+      <option value="light">Light</option>
+      <option value="dark">Dark</option>
+    </select>
     <!-- <Section anchor="About" title="About us" subtitle="The power of Vue Components" grid="2">
       <div class="about__content">
         <h3>{{ about.title }}</h3>
@@ -87,3 +84,13 @@
     <Footer />
   </div>
 </template>
+<!-- <style>
+body {
+  background-color: #fff;
+  color: rgba(0,0,0,0.8);
+}
+.dark-mode body {
+  background-color: #091a28;
+  color: #ebf4f1;
+}
+</style> -->
