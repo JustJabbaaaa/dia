@@ -1,0 +1,39 @@
+@use '../abstracts/variables' as *;
+
+.dark-mode{
+    a{
+        color: $white-color;
+    }
+    body {
+        background-color: #091a28;
+        color: #ebf4f1;
+        #Navbar.active {
+            .nav {
+            background: rgba($black-color, .1);
+            }
+        }
+        #Services{
+            .services__card{
+                background:rgba($black-color, .3);
+                border-color: rgba(#091a28, .4)
+            }
+        }
+        #Contact{
+            form{
+                .contact__form{
+                    &--group{
+                        input,
+                        textarea{
+                            color:white;
+                            background-color:rgba($black-color, .3)
+                        }
+                    }
+                }
+            }
+        }
+        .footer{
+            background: rgba($black-color, 0.3);
+            background: linear-gradient(180deg,rgba(#091a28, .3),rgba($primary-color, .5) 50%, rgba($primary-dark, .7) 100%);
+        }
+    }
+}
