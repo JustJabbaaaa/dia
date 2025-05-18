@@ -3,6 +3,9 @@
 .dark-mode{
     a{
         color: $white-color;
+        &:hover, &:active, &:focus{
+            color: $primary-color;
+        }
     }
     .section{
         &__title{
@@ -16,7 +19,14 @@
         color: #ebf4f1;
         #Navbar.active {
             .nav {
-            background: rgba($black-color, .1);
+                background: rgba(#0a1e2e, .5);
+            }
+        }
+        .nav {
+            &__collapse{
+                @media screen and (max-width: 991px) {
+                    background: rgba(#091a28, .95);
+                }
             }
         }
         #Services{

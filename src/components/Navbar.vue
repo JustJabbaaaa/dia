@@ -51,6 +51,7 @@ onUnmounted(() => {
           </div>
         </button>
         <div class="nav__collapse" :class="{ 'show': active }">
+          <NuxtLink to="/" class="nav__brand menux" aria-label="Go to homepage" ><NuxtImg src="/images/logo/logo.png" alt="Nuxt logo" /></NuxtLink>
           <div class="nav__menu">
             <ul class="nav__list">
               <li class="nav__item" v-for="item in navigation" :key="item.name">
@@ -70,33 +71,3 @@ onUnmounted(() => {
     </nav>
   </div>
 </template>
-<!-- <template>
-  <div id="Navbar">
-    <nav class="nav">
-      <div class="container">
-        <NuxtLink to="/" class="nav__brand" aria-label="Go to homepage"><NuxtImg src="/images/logo/logo.png" alt="Nuxt logo" /></NuxtLink>
-        <button class="nav__toggler" type="button" aria-label="Toggle navigation" @click="active = !active">
-          <div class="nav__toggler--btn" :class="{ 'active': active }">
-            <span></span>
-            <span></span>
-            <span></span>
-          </div>
-        </button>
-        <div class="nav__menu" :class="{ 'show': active }">
-            <ul class="nav__list">
-              <li class="nav__item" v-for="item in navigation" :key="item.name">
-                <NuxtLink :to="item.link" class="nav__link" @click="active = !active">{{ item.name }}</NuxtLink> 
-              </li>
-            </ul>
-          </div>
-          <div class="nav__menu--right">
-            <NuxtLink to="" class="nav__link btn btn-primary" target="_blank">Login</NuxtLink>
-            <button class="btn" @click="toggleColorMode">
-              <span v-if="colorMode.value === 'dark'">Light mode</span>
-              <span v-else>Dark</span>
-            </button>
-          </div>
-      </div>
-    </nav>
-  </div>
-</template> -->
