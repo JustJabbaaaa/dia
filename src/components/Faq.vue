@@ -23,7 +23,7 @@
                     Nihil facilis, enim quos odio aspernatur perspiciatis numquam quibusdam nemo ratione, ipsum quae rerum dicta autem qui consequatur dolorum vero consequuntur officia esse repudiandae. Facilis eligendi impedit earum id mollitia.</div>
                 </div>
             </div>
-            
+            <hr>
             <div class="faq__content--accordion" :class="{ bg: accordionIndex === 2 }">
                 <div class="faq__content--question" @click="toggleAccordion(2)">Lorem ipsum dolor sit amet consectetur adipisicing elit?
                     <span class="accordion-icon" :class="{ expanded: accordionIndex === 2 }">
@@ -35,6 +35,7 @@
                     Sapiente quae possimus labore, nulla inventore quisquam sint quaerat ut, eius quia, esse iure et minus rem odio placeat ducimus soluta repellendus est nesciunt deleniti cumque? Aperiam deserunt mollitia maxime.</div>
                 </div>
             </div>
+            <hr>
             <div class="faq__content--accordion" :class="{ bg: accordionIndex === 3 }">
                 <div class="faq__content--question" @click="toggleAccordion(3)">Lorem ipsum dolor sit?
                     <span class="accordion-icon" :class="{ expanded: accordionIndex === 3 }">

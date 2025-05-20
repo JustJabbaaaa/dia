@@ -45,7 +45,16 @@
         }
         #Pricing{
             .pricing__card{
-                box-shadow: 0 0 30px -3px rgba($primary-light, .5);
+                background:rgba($black-color, .3);
+                border-color: rgba(#091a28, .4);
+                box-shadow: 0 0 30px -3px rgba($primary-dark, .4);
+                &:hover {
+                    border-color: rgba($primary-color, .35);
+                    box-shadow: 0 0 45px -3px rgba($primary-light, .75);
+                    .services__card--title {
+                        color: $primary-color;
+                    }
+                }   
             }
         }
         #Contact{

@@ -22,18 +22,28 @@
         align-self: stretch;
         border-radius:2rem;
         box-shadow: 0 0 30px -3px rgba($primary-color, .4);
+        transition: .3s all ease;
+        &:hover {
+        border-color: rgba($primary-color, .35);
+        box-shadow: 0 0 45px -3px rgba($primary-color, .75);
+        .services__card--title {
+            color: $primary-color;
+        }
+        }
         // &--head{
         //     border:1px solid $primary-color;
         //     border-radius:1rem;
         //     padding:1rem;
         // }
         &--title{
+            text-align: center;
             font-size:2rem;
             font-weight: 600;
             text-transform: uppercase;
             color:$primary-color;
         }
         &--subtitle{
+            text-align: center;
             font-size:1rem;
             color:$primary-dark;
         }
