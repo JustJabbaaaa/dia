@@ -62,8 +62,36 @@ onUnmounted(() => {
           <div class="nav__menu--right">
             <NuxtLink to="" class="nav__link btn btn-primary" target="_blank">Login</NuxtLink>
             <button class="btn" @click="toggleColorMode">
-              <span v-if="colorMode.value === 'dark'">Light</span>
-              <span v-else>Dark</span>
+              <span class="darkmode" v-if="colorMode.value === 'dark'">
+                <svg viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="si-glyph si-glyph-light-bulb" fill="#000000">
+                  <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                  <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                  <g id="SVGRepo_iconCarrier"> <defs> </defs> 
+                    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"> 
+                      <g transform="translate(3.000000, 0.000000)" fill="black"> 
+                        <path d="M10,3.991 C10,1.422 7.729,0.015 5,0.015 C2.271,0.015 0,1.421 0,3.991 C0,7.29 2.087,8.188 3.312,10.269 C3.576,10.718 2.822,10.496 3.077,10.952 L6.895,10.952 C7.147,10.5 6.3,10.723 6.562,10.276 C7.782,8.192 10,7.375 10,3.991 L10,3.991 Z" class="si-glyph-fill bulb"> </path> 
+                        <rect x="3" y="12" width="3.953" height="0.922" class="si-glyph-fill"> </rect> 
+                        <path d="M6.969,14.968 C6.969,15.529 6.535,15.985 5.998,15.985 L4.014,15.985 C3.476,15.985 3.042,15.529 3.042,14.968 L3.042,14.021 L6.969,14.021 L6.969,14.968 L6.969,14.968 Z" class="si-glyph-fill"> </path> 
+                      </g> 
+                    </g> 
+                  </g>
+                </svg>
+              </span>
+              <span class="lightmode" v-else>
+                <svg viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="si-glyph si-glyph-light-bulb" fill="#000000">
+                  <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                  <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                  <g id="SVGRepo_iconCarrier"> <defs> </defs> 
+                    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"> 
+                      <g transform="translate(3.000000, 0.000000)" fill="black"> 
+                        <path d="M10,3.991 C10,1.422 7.729,0.015 5,0.015 C2.271,0.015 0,1.421 0,3.991 C0,7.29 2.087,8.188 3.312,10.269 C3.576,10.718 2.822,10.496 3.077,10.952 L6.895,10.952 C7.147,10.5 6.3,10.723 6.562,10.276 C7.782,8.192 10,7.375 10,3.991 L10,3.991 Z" class="si-glyph-fill bulb"> </path> 
+                        <rect x="3" y="12" width="3.953" height="0.922" class="si-glyph-fill"> </rect> 
+                        <path d="M6.969,14.968 C6.969,15.529 6.535,15.985 5.998,15.985 L4.014,15.985 C3.476,15.985 3.042,15.529 3.042,14.968 L3.042,14.021 L6.969,14.021 L6.969,14.968 L6.969,14.968 Z" class="si-glyph-fill"> </path> 
+                      </g> 
+                    </g> 
+                  </g>
+                </svg>
+              </span>
             </button>
           </div>
         </div>
