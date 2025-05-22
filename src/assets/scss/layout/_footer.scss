@@ -26,6 +26,12 @@
         margin-bottom:1rem;
       }
     }
+    &--image, &--links, &--tos{
+      @media screen and (min-width: 992px) {
+        width:33%;
+        justify-content: center;
+      }
+    }
     &--links, &--tos{
       display:flex;
       flex-direction: row;
