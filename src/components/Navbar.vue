@@ -60,7 +60,7 @@ onUnmounted(() => {
             </ul>
           </div>
           <div class="nav__menu--right">
-            <NuxtLink to="" class="nav__link btn btn-primary" target="_blank">Login</NuxtLink>
+            <NuxtLink to="https://app.orionaccountsmanager.com/" class="nav__link btn btn-primary" target="_blank">Go to App</NuxtLink>
             <button class="btn" @click="toggleColorMode">
               <span class="darkmode" v-if="colorMode.value === 'dark'">
                 <svg viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="si-glyph si-glyph-light-bulb" fill="#000000">

@@ -11,14 +11,14 @@
             <NuxtImg class="numbers__card--image" src="/images/logo/logo.png"/>
             <div class="left">
                 <div class="numbers__card--number">2137+</div>
-                <div class="numbers__card--title">Customers</div>
+                <div class="numbers__card--title">Happy customers</div>
             </div>
         </div>
         <div class="numbers__card">
             <NuxtImg class="numbers__card--image" src="/images/logo/logo.png"/>
             <div class="left">
                 <div class="numbers__card--number">420+</div>
-                <div class="numbers__card--title">Shiten machen</div>
+                <div class="numbers__card--title">Games & apps supported</div>
             </div>
         </div>
         <div class="numbers__card">

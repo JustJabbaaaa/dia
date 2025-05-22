@@ -12,7 +12,7 @@
   left: 0;
   right: 0;
   z-index: 1030;
-  padding: 2rem 0;
+  padding: 1.5rem 0;
   transition: .3s all ease-in-out;
   border-bottom: 1px solid $primary-color;
   & .container {
@@ -85,7 +85,7 @@
   &__brand {
     display:none;
     img {
-      max-height: 50px;
+      max-height: 70px;
     }
     &.menux{
       display:block;

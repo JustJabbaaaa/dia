@@ -6,6 +6,9 @@
         &:hover, &:active, &:focus{
             color: $primary-color;
         }
+        &.btn-primary{
+            color:white;
+        }
     }
     .section{
         &__title{
@@ -29,15 +32,15 @@
                 }
             }
         }
-        #Services{
-            .services__card{
+        #About{
+            .about__card{
                 background:rgba($black-color, .3);
                 border-color: rgba(#091a28, .4);
                 box-shadow: 0 0 30px -3px rgba($primary-dark, .4);
                 &:hover {
                     border-color: rgba($primary-color, .35);
                     box-shadow: 0 0 45px -3px rgba($primary-light, .75);
-                    .services__card--title {
+                    .about__card--title {
                         color: $primary-color;
                     }
                 }   

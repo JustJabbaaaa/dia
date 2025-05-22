@@ -2,14 +2,14 @@
 #Contact{
     form{
         width:100%;
-        max-width:900px;
+        max-width:800px;
         display:flex;
         flex-direction: column;
         gap: 1rem;
         margin: 0 auto;
         .contact__form{
             display:grid;
-            grid-template-columns: repeat(2,1fr);
+            grid-template-columns: repeat(3,1fr);
             gap:1rem;
             @media screen and (max-width: 992px) {
                 grid-template-columns: repeat(1, 1fr);
@@ -49,15 +49,16 @@
                     }
                 }
                 &.message{
-                    grid-column: span 2;
+                    grid-column: span 3;
                     @media screen and (max-width: 992px) {
                         grid-column: span 1;
                     }
                 }
             }
-        }
-        button{
-            border:none;
+            &--submit{
+                width:300px;
+                margin:0 auto;
+            }
         }
     }
 }
