@@ -3,7 +3,7 @@
         <div class="pricing__card">
             <div class="pricing__card--head">
                 <div class="pricing__card--title">Basic</div>
-                <div class="pricing__card--subtitle">Ideal for cwels</div>
+                <div class="pricing__card--subtitle">Lorem, ipsum dolor.</div>
                 <hr>
                 <div class="pricing__card--cost"><span>Free</span></div>
             </div>
@@ -20,7 +20,7 @@
         <div class="pricing__card">
             <div class="pricing__card--head">
                 <div class="pricing__card--title">Premium</div>
-                <div class="pricing__card--subtitle">Ideal for cwels</div>
+                <div class="pricing__card--subtitle">Lorem, ipsum dolor.</div>
                 <hr>
                 <div class="pricing__card--cost"><span>$2115</span><p>per month</p></div>
             </div>
