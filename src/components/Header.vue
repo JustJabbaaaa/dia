@@ -2,8 +2,8 @@
   <Section anchor="Header" grid="2">
     <div class="header__left">
       <div class="header__description">
-        <h1 class="header__description--title">Eldorado benc.</h1>
-        <p class="header__description--text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias cum delectus ab quo labore deleniti doloremque illo repellendus praesentium porro maiores incidunt vel, animi quia voluptatum et suscipit voluptate! Quia veniam illo maiores modi quaerat facere quis odio voluptas corrupti?</p>
+        <h1 class="header__description--title">Orion Accounts Manager – Secure Your League of Legends Journey</h1>
+        <p class="header__description--text">Store your accounts, monitor key stats, and never lose access again. Multiple encryption layers keep your data safe, so you can focus on what matters — winning.</p>
         <NuxtLink to="https://app.orionaccountsmanager.com/" class="btn btn-primary" target="_blank">Start now!</NuxtLink>
       </div>
     </div>
