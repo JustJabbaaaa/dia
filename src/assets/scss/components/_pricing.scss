@@ -12,7 +12,7 @@
     .section__body {
       position: relative;
       align-items: center;
-      gap: 1.5rem;
+      gap: 5rem;
       z-index: 2;
     }
     .pricing__card{
@@ -68,6 +68,12 @@
                 font-weight:500;
                 text-transform: uppercase;
                 letter-spacing: 3px;
+            }
+            ul{
+                li{
+                    list-style-type: "- ";
+                    list-style-position: inside;
+                }
             }
         }
         a{
