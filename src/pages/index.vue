@@ -1,8 +1,4 @@
 <script setup>
-  const pageTitle = 'Home';
-  useHead({
-    title: pageTitle,
-  });
   
   const about = computed(() => [
     {

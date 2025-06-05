@@ -24,7 +24,7 @@ export default defineNuxtConfig({
   },
 
   site: {
-    url: 'https://konkol00.github.io/',
+    url: '',
   },
 
   robots: { robotsTxt: false },

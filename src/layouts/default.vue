@@ -1,7 +1,7 @@
 <script setup lang="ts">
-  const pageUrl = 'Nuxt-Starter';
-  const pageTitle = 'Nuxt-Starter';
-  const pageDescription = 'Responsive, fast and modern Nuxt.js starter project';
+  const pageUrl = 'Orion Accounts Manager';
+  const pageTitle = 'Orion Accounts Manager';
+  const pageDescription = 'Store your accounts, monitor key stats, and never lose access again.';
   useHead({
     htmlAttrs: {
       lang: 'pl'
