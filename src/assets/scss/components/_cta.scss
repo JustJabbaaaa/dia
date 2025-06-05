@@ -1,0 +1,11 @@
+@use '../abstracts/variables' as *;
+
+#CTA{
+    button{
+        width:50%;
+        height:70px;
+        margin:auto;
+        font-size:2rem;
+        border-radius:1.25rem;
+    }
+}
