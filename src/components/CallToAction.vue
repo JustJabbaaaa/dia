@@ -1,5 +1,7 @@
 <template>
     <Section anchor="CTA">
-        <button class="btn btn-primary">Start now!</button>
+        <NuxtLink class="btn btn-primary" to="https://app.orionaccountsmanager.com/" target="_blank">
+            Start now
+        </NuxtLink>
     </Section>
 </template>
