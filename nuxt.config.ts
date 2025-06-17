@@ -19,9 +19,9 @@ export default defineNuxtConfig({
     '@nuxtjs/color-mode'
   ],
 
-  colorMode: {
-    preference: 'light'
-  },
+  // colorMode: {
+  //   preference: 'light'
+  // },
 
   site: {
     url: '',
