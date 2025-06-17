@@ -61,12 +61,14 @@ onUnmounted(() => {
           <div class="nav__menu--right">
             <NuxtLink to="https://app.orionaccountsmanager.com/" class="nav__link btn btn-primary" target="_blank">Go to App</NuxtLink>
             <button class="btn" @click="toggleColorMode">
-              <span class="darkmode" v-if="colorMode.value === 'dark'">
-                <NuxtImg src="/images/bulb/lightbulb.png"/>
-              </span>
-              <span class="lightmode" v-else>
-                <NuxtImg src="/images/bulb/bulb.png"/>
-              </span>
+              <ClientOnly>
+                <span class="darkmode" v-if="colorMode.value === 'dark'">
+                  <NuxtImg src="/images/bulb/lightbulb.png"/>
+                </span>
+                <span class="lightmode" v-else>
+                  <NuxtImg src="/images/bulb/bulb.png"/>
+                </span>
+              </ClientOnly>
             </button>
           </div>
         </div>
