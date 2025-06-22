@@ -36,7 +36,7 @@
                     button{
                         span{
                             img{
-                                filter: drop-shadow(0 0px 8px $primary-light);
+                                filter: drop-shadow(0 0 8px $primary-light);
                             }
                         }
                     }
@@ -48,6 +48,11 @@
                 background:rgba($black-color, .3);
                 border-color: rgba(#091a28, .4);
                 box-shadow: 0 0 30px -3px rgba($primary-dark, .4);
+                &--img{
+                    img{
+                        filter: drop-shadow(0 0 3px $primary-light);
+                    }
+                }
                 &:hover {
                     border-color: rgba($primary-color, .35);
                     box-shadow: 0 0 45px -3px rgba($primary-light, .75);
@@ -90,7 +95,6 @@
         }
         .numbers__card{
             &--image{
-
                 filter: drop-shadow(0 0px 2px $primary-light);
             }
         }
